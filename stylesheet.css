@@ -1,0 +1,251 @@
+@media screen and (min-width:0px) {
+  body{
+    margin: 0;
+    /* display: flex; */
+    background-color: rgb(255, 255, 255);
+  }
+  main{
+    padding-top: 0px;
+    width: 100vw;
+    width: 100%;
+  }
+  aside{
+    width: 30%;
+    min-width: 350px;
+    height: 100%;
+    border-top-right-radius: 30px;
+  }
+  nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+  nav ul li{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  nav a{
+    color: rgb(243, 243, 243);
+  }
+  .No0{
+    width: 80%;
+    margin-left: 0;
+  }
+  .open,.close{
+    display: none;
+    display: block;
+  }
+  .No4{
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .open{
+    position: absolute;
+  }
+  .close{
+    font-size: 30px;
+    color: white;
+  }
+  input[type="checkbox"]{
+    position: absolute;
+    left: -50vw;
+  }
+  .open svg{
+    padding-top: 4px;
+    padding-left: 6px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  aside{
+    position: absolute;
+    top: 0;
+    left: -450px;
+    transition: all 0.4s;
+    background: rgba(0, 0, 0, 0.692); 
+    height: 100vh;
+  }
+  input[type="checkbox"]:checked ~ aside{
+    left: 0;
+  }
+  input[type="checkbox"]:checked ~.back{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.8) ;
+   z-index: 3;
+  }
+  header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0) ;
+    display: flex;
+    position: absolute; 
+    top: 0px;
+    position: fixed;
+    z-index: 10;
+  }
+  /* メニュー終了 */
+  h1{
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: white;
+    font-family: fantasy;
+    font-size: 25px;
+    position: relative ;
+  }
+  .A{
+    margin: 20px;
+  }
+  .A1{
+    width: 410px;
+    margin:2em 0;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 1.5em;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+  }
+
+  .A1:before, .A1:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+  }
+  .A1:before {left: 10px;}
+  .A1:after {right: 10px;}
+  .A1 p {
+    margin: 0; 
+    padding: 0;
+  }
+  .A h2{
+    font-weight: 700;
+  }
+  .A2{
+    margin-top: 100px;
+  }
+  .G{
+    margin-top: 90px;
+  }
+  .B{
+    margin-top: 40px;
+    text-align: center;
+  }
+  .G1{
+    margin-top: 160px;
+  }
+  .C{
+    background-image: url(../img/back.jpg);
+    background-color: rgba(255, 255, 255, 0.795);
+    background-blend-mode: lighten;
+    background-attachment: scroll;
+  }
+  .C1{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .C1 h2{
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+  .C1 h3{
+    font-weight: 520;
+    font-size: 20px;
+    border-left-color: rgb(59, 58, 58);
+    border-left-style: solid;
+    border-left-width: 4px;
+  }
+  .C1 p{
+    font-size: 15px;
+  }
+  .G2{
+    margin-top: 100px;
+  }
+  .D{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .D h2{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .D1{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #CCCCCC;
+  }
+  .D1::before,.D1::after{
+    content: '★★★★★';
+  }
+  .D1[data-rate="4"]:after{width: 80%;}
+  .D1:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffcf32;
+  }
+  .D2{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #CCCCCC;
+  }
+  .D2::before,.D2::after{
+    content: '★★★★★';
+  }
+  .D2[data-rate="2"]:after{width: 40%;}
+  .D2:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffcf32;
+  }
+  .D3{
+    display: flex;
+  }
+  .D5{
+    margin-left: 20px;
+    line-height: 10px;
+  }
+  .D6{
+    display: flex;
+    margin-top: 30px;
+  }
+  .D8{
+    margin-left: 20px;
+    line-height: 10px;
+  }
+  .G3{
+    margin-top: 100px;
+  }
+  .E {
+    text-align: center;
+  }
+  .E img{
+    border-radius: 10px;
+    border-color: rgba(202, 200, 200, 0.87);
+  }
+}
