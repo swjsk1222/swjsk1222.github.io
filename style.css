@@ -37,6 +37,9 @@ span{
   margin-left: 50px;
   font-size: 17px;
 }
+a:hover{
+  color: rgb(243, 243, 40);
+}
 .No0{
   width: 80%;
   margin-left: 0;
@@ -398,13 +401,27 @@ h1{
   }
   aside{
     position: absolute;
+ 
     left: 0;
-    background-color: white;
-    z-index: 0!important;
-    transition: none;
+    right: 100;
+    background: none;
+    width: 100vw;
+    height: 100px;
+  }
+  nav{
+    height: 100px;
+    width: 100vw;
+    text-align: right;
+  }
+  ul{
+    position: relative;
+    bottom: 20px;
+    left: 40%;
+    display: flex;
   }
   a{
     font-size: 20px;
+    margin-right: 10px;
   }
   li span{
     display: none;
@@ -412,8 +429,4 @@ h1{
   .No0{
     display: none;
   }
-  main{
-    background-color: ;
-    
-  }
-} 
+}
