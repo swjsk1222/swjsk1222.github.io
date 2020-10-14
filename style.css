@@ -75,7 +75,7 @@ aside{
   top: 0;
   left: -450px;
   transition: all 0.4s;
-  background: rgba(0, 0, 0, 0.856)!important; 
+  background: rgba(0, 0, 0, 0.856); 
   z-index: 11;
   height: 100vh;
 }
