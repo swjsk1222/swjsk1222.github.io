@@ -1,7 +1,8 @@
+
 body{
   margin: 0;
   /* display: flex; */
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.007);
 }
 main{
   padding-top: 0px;
@@ -11,8 +12,8 @@ main{
   margin-left: auto;
 }
 aside{
-  width: 30%;
-  min-width: 350px;
+  width: 20%;
+  min-width: 250px;
   border-top-right-radius: 30px;
 }
 nav ul{
@@ -22,7 +23,7 @@ nav ul{
   margin-top: 50px;
 }
 nav ul li{
-  font-size: 25px;
+  font-size: 17px;
   font-weight: 600;
   margin-left: 20px;
   margin-bottom: 40px;
@@ -35,7 +36,7 @@ nav a{
   text-decoration: none;
 }
 span{
-  margin-left: 50px;
+  margin-left: 30px;
   font-size: 17px;
 }
 a:hover{
@@ -77,9 +78,10 @@ aside{
   top: 0;
   left: -450px;
   transition: all 0.4s;
-  background: rgba(0, 0, 0, 0.856); 
+  background: rgba(0, 0, 0); 
   z-index: 11;
   height: 100vh;
+  
 }
 input[type="checkbox"]:checked ~ aside{
   left: 0;
@@ -128,6 +130,7 @@ h1{
   padding: 0.5em 1.5em;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
+  font-size: 19px;
 }
 
 .A1:before, .A1:after{
@@ -151,22 +154,113 @@ h1{
 .A2{
   margin-top: 100px;
 }
+
+h2{
+  font-size: 2.5em;
+}
+
 .G{
   margin-top: 90px;
 }
+
+.B0{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(250, 252, 207);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.6s ease;
+}
+.B0:hover{
+  background-color: rgba(194, 253, 255, 0.575);
+  width: 60px;
+  height: 60px;
+}
+.B00{
+  width: 70px;
+  height: 70px;
+  background-color: rgb(250, 252, 207);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.6s ease;
+}
+.B00:hover{
+  background-color: rgba(194, 253, 255, 0.575);
+  width: 100px;
+  height: 100px;
+}
 .B{
-  width: 100%;
+  background-color: rgb(254, 255, 218);
+  height: 450px;
+  border-radius: 50%;
+  -webkit-transition: all 1.0s ease;
+  -moz-transition: all 1.0s ease;
+  -o-transition: all 1.0s ease;
+  transition: all  1.0s ease;
+}
+.B:hover{
+  background-color: rgba(194, 253, 255, 0.575);
+}
+.B1{
+  display: block;
+  margin: 0;
   margin-top: 80px;
+  text-align: center; 
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.B h2{
   text-align: center;
+  width: 100%;
+  margin-top: 0;
+}
+.B2{
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.B ul{
+  font-size :2.5em;
+  font-weight: 550;
+}
+
+.B li{
+  display: list-item;
+  font-size: 20px;
+  text-align: left;
+  line-height: 40px;
 }
 .G1{
   margin-top: 160px;
 }
 .C{
+  /* background-image: url(https://github.com/swjsk1222/swjsk.github.io/blob/master/back.jpg?raw=true);
+  background-color:rgba(252, 255, 210, 0.966);
+  background-blend-mode: lighten;
+  background-attachment: scroll; */
+  transition: all  0.8s ease;
+}
+.C:hover{
   background-image: url(https://github.com/swjsk1222/swjsk.github.io/blob/master/back.jpg?raw=true);
-  background-color: rgba(255, 255, 255, 0.795);
+  /* background-color:rgba(252, 255, 210, 0.966); */
+  background-color: rgba(241, 243, 114, 0.404);
   background-blend-mode: lighten;
   background-attachment: scroll;
+  color: rgb(255, 255, 255);
 }
 .C1{
   margin-top: 0px;
@@ -180,22 +274,40 @@ h1{
   padding-top: 30px;
 }
 .C1 h3{
-  font-weight: 520;
-  font-size: 20px;
-  border-left-color: rgb(59, 58, 58);
+  font-weight: 600;
+  font-size: 25px;
+  border-left-color: rgb(252, 252, 252);
   border-left-style: solid;
   border-left-width: 4px;
 }
 .C1 p{
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .G2{
   margin-top: 100px;
 }
 .D{
   margin-top: 80px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  background-color: rgb(235, 238, 73);
+  border-radius: 30px;
+}
+.D0{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: flex;
+}
+.D0 h3{
+  margin: 0;
+  font-size: 1.6em;
+margin-left: 20px;
 }
 .D h2{
   text-align: center;
@@ -219,7 +331,7 @@ h1{
   left: 0;
   overflow: hidden;
   white-space: nowrap;
-  color: #ffcf32;
+  color: #525151;
 }
 .D2{
   position: relative;
@@ -239,22 +351,49 @@ h1{
   left: 0;
   overflow: hidden;
   white-space: nowrap;
-  color: #ffcf32;
+  color: #4d4d4d;
 }
 .D3{
+  width: 400px;
   display: flex;
+
 }
 .D5{
   margin-left: 20px;
   line-height: 10px;
 }
+.D5 h3{
+  text-align: start;
+  width: 170px;
+  font-size: 1.5em;
+}
+.D55{
+  position: relative;
+  right: 270px;
+}
 .D6{
+  width: 300px;
+  font-family: "Nico Moji";
   display: flex;
-  margin-top: 30px;
+  margin-right: auto;
 }
 .D8{
-  margin-left: 20px;
   line-height: 10px;
+}
+.D8 h3{
+  font-size: 1.5em;
+}
+.D88{
+  
+}
+.D9{
+  width: 400px;
+  line-height: 1;
+  font-family:"Nico Moji","Noto Sans Japanese";
+}
+.D10{
+  display: flex;
+  height: 100px;
 }
 .G3{
   margin-top: 100px;
@@ -267,7 +406,7 @@ h1{
 }
 .E img{
   border-radius: 10px;
-  border-color: rgba(202, 200, 200, 0.87);
+  border-color: rgb(255, 255, 255);
 }
 .G4{
   margin-top: 40px;
@@ -406,7 +545,7 @@ h1{
   }
   aside{
     position: absolute;
- 
+    transition: none;
     left: 0;
     right: 100;
     background: none;
@@ -435,5 +574,4 @@ h1{
     display: none;
   }
 } 
-
 
